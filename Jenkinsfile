@@ -70,6 +70,9 @@ node('jenkins-docker-3') {
 
       // Move Jenkins build parameters to git config properties
       [ 'K8S_CLUSTER',
+        'K8S_NAMESPACE',
+        'K8S_APP',
+        'APP_NAME'
         'APP_HOSTNAME',
         'OAUTH_GITHUB_ORG',
         'OAUTH_GITHUB_TEAM',
